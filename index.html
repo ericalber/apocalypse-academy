@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocalypse Academy - A Última Academia Antes do Fim</title>
+    <style>
+        /* Estilos Globais */
+        :root {
+            --black-primary: #121212;
+            --black-secondary: #1E1E1E;
+            --yellow-prophetic: #FFD700;
+            --gray-dark: #2D2D2D;
+            --gray-medium: #4A4A4A;
+            --white-shadow: #F5F5F5;
+            --red-apocalyptic: #B22222;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--black-primary);
+            color: var(--white-shadow);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        h4, h5, h6, .nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: linear-gradient(to bottom, rgba(18, 18, 18, 1), rgba(18, 18, 18, 0.8));
+            padding: 20px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-family: 'Cinzel', serif;
+            font-weight: 900;
+            font-size: 24px;
+            color: var(--yellow-prophetic);
+            text-shadow: 0 0 10px rgba(245, 245, 245, 0.3);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        .nav-link {
+            color: var(--white-shadow);
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--yellow-prophetic);
+        }
+        
+        .cta-button {
+            background-color: var(--yellow-prophetic);
+            color: var(--black-primary);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.7));
+            z-index: -1;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 1;
+        }
+        
+        .hero-tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--yellow-prophetic);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .hero-title {
+            font-size: 64px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+        
+        /* Featured Content */
+        .featured-content {
+            padding: 100px 0;
+            background-color: var(--black-secondary);
+        }
+        
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--yellow-prophetic);
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .content-card {
+            background-color: var(--gray-dark);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .card-description {
+            font-size: 16px;
+            color: #BDBDBD;
+            margin-bottom: 20px;
+        }
+        
+        .card-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: transparent;
+            border: 1px solid var(--yellow-prophetic);
+            color: var(--yellow-prophetic);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .card-button:hover {
+            background-color: var(--yellow-prophetic);
+            color: var(--black-primary);
+        }
+        
+        /* Categories Section */
+        .categories {
+            padding: 100px 0;
+        }
+        
+        .category-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .category-item {
+            flex: 1;
+            min-width: 200px;
+            height: 200px;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .category-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .category-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.5));
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        
+        .category-title {
+            font-size: 24px;
+            color: var(--white-shadow);
+            transition: color 0.3s ease;
+        }
+        
+        .category-item:hover .category-image {
+            transform: scale(1.1);
+        }
+        
+        .category-item:hover .category-title {
+            color: var(--yellow-prophetic);
+        }
+        
+        /* Testimonial Section */
+        .testimonial {
+            padding: 100px 0;
+            background-color: var(--black-secondary);
+            text-align: center;
+        }
+        
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-text {
+            font-family: 'Uncial Antiqua', cursive;
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: var(--yellow-prophetic);
+        }
+        
+        /* Call to Action */
+        .cta-section {
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(to right, var(--black-primary), var(--red-apocalyptic));
+        }
+        
+        .cta-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-description {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--black-primary);
+            padding: 50px 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+        
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            font-weight: 900;
+            font-size: 24px;
+            color: var(--yellow-prophetic);
+            margin-bottom: 20px;
+        }
+        
+        .footer-description {
+            color: #BDBDBD;
+            margin-bottom: 20px;
+        }
+        
+        .footer-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: var(--white-shadow);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-link {
+            margin-bottom: 10px;
+        }
+        
+        .footer-link a {
+            color: #BDBDBD;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-link a:hover {
+            color: var(--yellow-prophetic);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--gray-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--yellow-prophetic);
+        }
+        
+        .social-icon {
+            color: var(--white-shadow);
+            font-size: 18px;
+        }
+        
+        .copyright {
+            margin-top: 50px;
+            text-align: center;
+            color: #BDBDBD;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 48px;
+            }
+            
+            .hero-subtitle {
+                font-size: 20px;
+            }
+            
+            .section-title {
+                font-size: 30px;
+            }
+            
+            .testimonial-text {
+                font-size: 20px;
+            }
+            
+            .cta-title {
+                font-size: 36px;
+            }
+            
+            .cta-description {
+                font-size: 18px;
+            }
+            
+            nav {
+                display: none; /* Mobile menu would be implemented with JavaScript */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .hero-subtitle {
+                font-size: 18px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+            
+            .testimonial-text {
+                font-size: 18px;
+            }
+            
+            .cta-title {
+                font-size: 30px;
+            }
+            
+            .cta-description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-text">APOCALYPSE ACADEMY</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Documentários</a></li>
+                    <li><a href="#" class="nav-link">Cursos</a></li>
+                    <li><a href="#" class="nav-link">Revistas</a></li>
+                    <li><a href="#" class="nav-link">Devocionais</a></li>
+                    <li><a href="#" class="nav-link">Comunidade</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                    <li><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button">Entrar</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <!-- Video placeholder - would be replaced with actual video -->
+        <div class="hero-video" style="background-color: #000;"></div>
+        <div class="container hero-content">
+            <p class="hero-tagline">Quando o sistema falhar, aqui ainda restará verdade.</p>
+            <h1 class="hero-title">A Última Academia Antes do Fim</h1>
+            <p class="hero-subtitle">Descubra a verdade através de documentários, cursos e conteúdos exclusivos sobre escatologia, geopolítica e guerra cultural.</p>
+            <button class="cta-button">Comece Agora</button>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="featured-content">
+        <div class="container">
+            <h2 class="section-title">Documentários em Destaque</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-image" style="background-color: #333;"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">A Arquitetura da Besta</h3>
+                        <p class="card-description">Uma análise profunda sobre as estruturas de poder global e sua relação com profecias bíblicas.</p>
+                        <a href="#" class="card-button">Assistir</a>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-image" style="background-color: #333;"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">O Dossiê do Anticristo</h3>
+                        <p class="card-description">Investigação histórica e profética sobre as características e o surgimento do anticristo.</p>
+                        <a href="#" class="card-button">Assistir</a>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-image" style="background-color: #333;"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Inteligência Artificial e o Juízo Final</h3>
+                        <p class="card-description">Como a tecnologia moderna se alinha com as profecias sobre os últimos dias.</p>
+                        <a href="#" class="card-button">Assistir</a>
+                    </div>
+                </div>
+            </div>
+      
+(Content truncated due to size limit. Use line ranges to read in chunks)

@@ -1,0 +1,130 @@
+/* Card Component Styles */
+
+.card {
+    background-color: var(--gray-dark);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Card Image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: var(--gray-medium); /* Placeholder until image loads */
+}
+
+.card-image-tall {
+    height: 300px;
+}
+
+/* Card Content */
+.card-content {
+    padding: var(--spacing-lg);
+}
+
+/* Card Tag */
+.card-tag {
+    display: inline-block;
+    background-color: var(--black-primary);
+    color: var(--yellow-prophetic);
+    font-family: var(--font-subtitle);
+    font-weight: 600;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 20px;
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-title);
+}
+
+/* Card Meta */
+.card-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    color: #BDBDBD;
+    font-size: 14px;
+}
+
+/* Card Description */
+.card-description {
+    margin-bottom: var(--spacing-md);
+    color: #E0E0E0;
+    font-size: 14px;
+}
+
+/* Card Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--gray-medium);
+    margin-top: var(--spacing-md);
+}
+
+/* Card Variants */
+.card-horizontal {
+    display: flex;
+}
+
+.card-horizontal .card-image {
+    width: 40%;
+    height: auto;
+}
+
+.card-horizontal .card-content {
+    width: 60%;
+}
+
+.card-featured {
+    background-color: var(--black-secondary);
+}
+
+.card-featured .card-image {
+    height: 300px;
+}
+
+.card-featured .card-title {
+    font-size: 24px;
+}
+
+/* Card Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-horizontal {
+        flex-direction: column;
+    }
+    
+    .card-horizontal .card-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .card-horizontal .card-content {
+        width: 100%;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}

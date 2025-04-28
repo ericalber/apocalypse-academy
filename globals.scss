@@ -1,0 +1,229 @@
+@import 'variables';
+
+/* Global Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-body;
+  background-color: $color-black;
+  color: $color-white;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-title;
+  font-weight: 700;
+  margin-bottom: $spacing-md;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-3xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-2xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-2xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-xl;
+  }
+}
+
+h4 {
+  font-size: $font-size-xl;
+  font-family: $font-family-subtitle;
+}
+
+h5 {
+  font-size: $font-size-lg;
+  font-family: $font-family-subtitle;
+}
+
+h6 {
+  font-size: $font-size-md;
+  font-family: $font-family-subtitle;
+}
+
+p {
+  margin-bottom: $spacing-md;
+  font-size: $font-size-base;
+}
+
+a {
+  color: $color-yellow-primary;
+  text-decoration: none;
+  transition: color $transition-normal $transition-timing;
+  
+  &:hover {
+    color: $color-yellow-secondary;
+    text-shadow: 0 0 8px rgba($color-yellow-primary, 0.5);
+  }
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+/* Sections */
+.section {
+  padding: $spacing-3xl 0;
+  
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-2xl 0;
+  }
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-yellow {
+  color: $color-yellow-primary;
+}
+
+.bg-dark {
+  background-color: $color-dark-gray;
+}
+
+.bg-gradient {
+  background: $gradient-dark;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: $spacing-xs;
+}
+
+.mb-2 {
+  margin-bottom: $spacing-sm;
+}
+
+.mb-3 {
+  margin-bottom: $spacing-md;
+}
+
+.mb-4 {
+  margin-bottom: $spacing-lg;
+}
+
+.mb-5 {
+  margin-bottom: $spacing-xl;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: $spacing-xs;
+}
+
+.mt-2 {
+  margin-top: $spacing-sm;
+}
+
+.mt-3 {
+  margin-top: $spacing-md;
+}
+
+.mt-4 {
+  margin-top: $spacing-lg;
+}
+
+.mt-5 {
+  margin-top: $spacing-xl;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba($color-yellow-primary, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba($color-yellow-primary, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba($color-yellow-primary, 0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn $transition-normal ease-in;
+}
+
+.slide-up {
+  animation: slideUp $transition-normal ease-out;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-dark-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-light-gray;
+  border-radius: $border-radius-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $color-yellow-secondary;
+}

@@ -1,0 +1,110 @@
+{
+  "id": "documentary-002",
+  "title": "Sinais dos Céus: Fenômenos Astronômicos e Profecias",
+  "subtitle": "Desvendando as mensagens celestiais nos últimos dias",
+  "description": "Este documentário explora a relação entre fenômenos astronômicos raros e as profecias bíblicas, analisando eventos como tétrades lunares, conjunções planetárias e outros sinais celestes à luz das Escrituras.",
+  "longDescription": "Sinais dos Céus é um documentário fascinante que investiga a conexão entre fenômenos astronômicos extraordinários e as profecias bíblicas sobre os últimos dias. Combinando ciência astronômica de ponta com exegese bíblica cuidadosa, o filme examina como eventos celestes específicos podem estar alinhados com o calendário profético descrito nas Escrituras.\n\nO documentário analisa em detalhes as tétrades lunares (quatro eclipses lunares totais consecutivos), conjunções planetárias raras, cometas significativos e outros fenômenos astronômicos que coincidiram com momentos-chave da história de Israel e da igreja. Através de entrevistas com astrônomos, teólogos e historiadores, o filme apresenta uma perspectiva equilibrada sobre como interpretar estes sinais.\n\nUtilizando tecnologia de visualização avançada, Sinais dos Céus recria fenômenos astronômicos históricos e futuros, permitindo aos espectadores testemunhar estes eventos celestiais em detalhes impressionantes. O documentário também explora as referências bíblicas a sinais nos céus, desde o Antigo Testamento até o livro do Apocalipse, oferecendo uma compreensão profunda de como estes fenômenos se encaixam na narrativa profética maior.\n\nSem sensacionalismo, mas com rigor científico e teológico, Sinais dos Céus convida os espectadores a olhar para cima e considerar se os céus estão de fato declarando a glória de Deus e anunciando os tempos finais.",
+  "duration": "95 minutos",
+  "releaseDate": "2025-07-20",
+  "director": "Lucas Mendonça",
+  "producer": "Apocalypse Studios",
+  "category": "Astronomia Profética",
+  "tags": ["astronomia", "eclipses", "tétrades", "sinais celestes", "profecias"],
+  "rating": "Livre",
+  "featured": true,
+  "thumbnailUrl": "/assets/images/documentaries/sinais-ceus-thumb.jpg",
+  "coverImageUrl": "/assets/images/documentaries/sinais-ceus-cover.jpg",
+  "trailerUrl": "/assets/videos/documentaries/sinais-ceus-trailer.mp4",
+  "videoUrl": "/assets/videos/documentaries/sinais-ceus.mp4",
+  "videoQualityOptions": ["4K", "1080p", "720p", "480p"],
+  "subtitles": [
+    { "language": "Português", "url": "/assets/subtitles/sinais-ceus-pt.vtt" },
+    { "language": "English", "url": "/assets/subtitles/sinais-ceus-en.vtt" },
+    { "language": "Español", "url": "/assets/subtitles/sinais-ceus-es.vtt" }
+  ],
+  "chapters": [
+    {
+      "title": "Introdução: Os Céus Declaram",
+      "timestamp": "00:00:00",
+      "description": "Apresentação do tema e das referências bíblicas a sinais nos céus"
+    },
+    {
+      "title": "Capítulo 1: Tétrades Lunares na História",
+      "timestamp": "00:10:15",
+      "description": "Análise das tétrades lunares históricas e sua coincidência com eventos significativos para Israel"
+    },
+    {
+      "title": "Capítulo 2: Conjunções Planetárias e a Estrela de Belém",
+      "timestamp": "00:28:40",
+      "description": "Investigação sobre a Estrela de Belém e outras conjunções planetárias significativas"
+    },
+    {
+      "title": "Capítulo 3: Cometas e Mensageiros Celestes",
+      "timestamp": "00:45:30",
+      "description": "O papel dos cometas como possíveis sinais proféticos ao longo da história"
+    },
+    {
+      "title": "Capítulo 4: O Sol, a Lua e as Estrelas no Apocalipse",
+      "timestamp": "01:05:20",
+      "description": "Análise das referências a fenômenos celestes no livro do Apocalipse"
+    },
+    {
+      "title": "Capítulo 5: Sinais Futuros e Vigilância",
+      "timestamp": "01:25:45",
+      "description": "Discussão sobre possíveis sinais celestes futuros e a importância da vigilância"
+    }
+  ],
+  "experts": [
+    {
+      "name": "Dr. Michael Heiser",
+      "title": "Astrônomo e Teólogo",
+      "bio": "Ph.D. em Astronomia e Mestrado em Teologia, autor de 'Os Céus Falam'",
+      "imageUrl": "/assets/images/experts/michael-heiser.jpg"
+    },
+    {
+      "name": "Profa. Débora Almeida",
+      "title": "Historiadora e Pesquisadora",
+      "bio": "Especialista em história judaica e fenômenos astronômicos históricos",
+      "imageUrl": "/assets/images/experts/debora-almeida.jpg"
+    },
+    {
+      "name": "Pastor João Calvino Neto",
+      "title": "Teólogo e Escritor",
+      "bio": "Autor de diversos livros sobre escatologia e sinais dos tempos",
+      "imageUrl": "/assets/images/experts/joao-calvino-neto.jpg"
+    }
+  ],
+  "relatedDocumentaries": ["documentary-001", "documentary-008", "documentary-015"],
+  "relatedCourses": ["course-001", "course-004"],
+  "reviews": [
+    {
+      "user": "Pedro Henrique",
+      "rating": 5,
+      "comment": "Impressionante! A combinação de ciência astronômica e teologia bíblica é fascinante.",
+      "date": "2025-07-25"
+    },
+    {
+      "user": "Mariana Costa",
+      "rating": 5,
+      "comment": "As visualizações dos fenômenos astronômicos são de tirar o fôlego. Muito esclarecedor.",
+      "date": "2025-07-28"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Calendário de Fenômenos Astronômicos 2025-2030",
+      "type": "pdf",
+      "url": "/assets/resources/calendario-astronomico-2025-2030.pdf"
+    },
+    {
+      "title": "Guia de Observação: Eclipses Lunares",
+      "type": "pdf",
+      "url": "/assets/resources/guia-observacao-eclipses.pdf"
+    },
+    {
+      "title": "Infográfico: Tétrades Lunares na História",
+      "type": "image",
+      "url": "/assets/resources/infografico-tetrades-lunares.jpg"
+    }
+  ]
+}

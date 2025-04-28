@@ -1,0 +1,85 @@
+{
+  "id": "devotional-001",
+  "title": "Devocionais Proféticos - Volume 1",
+  "subtitle": "Meditações sobre profecias bíblicas com análises contemporâneas",
+  "description": "Uma série de áudios devocionais que combina leituras de passagens proféticas com reflexões sobre sua aplicação no mundo contemporâneo.",
+  "coverImageUrl": "/assets/images/devotionals/devocionais-profeticos-1-cover.jpg",
+  "thumbnailUrl": "/assets/images/devotionals/devocionais-profeticos-1-thumb.jpg",
+  "releaseDate": "2025-02-15",
+  "featured": true,
+  "spotifyPlaylistId": "mock1",
+  "spotifyEmbedCode": "<iframe src=\"https://open.spotify.com/embed/playlist/mock1\" width=\"300\" height=\"380\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+  "author": {
+    "name": "Eric Alberto da Cruz",
+    "title": "Pastor, Jornalista e Escritor",
+    "bio": "Fundador da Apocalypse Academy, Eric combina formação teológica com experiência jornalística para analisar eventos contemporâneos à luz das profecias bíblicas.",
+    "imageUrl": "/assets/images/authors/eric-alberto.jpg"
+  },
+  "tracks": [
+    {
+      "id": "track-001",
+      "title": "Introdução aos Devocionais Proféticos",
+      "description": "Uma introdução à série de devocionais, explicando a importância de meditar nas profecias bíblicas e como elas nos ajudam a viver com sabedoria nos tempos atuais.",
+      "scripture": "2 Pedro 1:19-21",
+      "duration": "3:45",
+      "audioUrl": "/assets/audio/devocionais/introducao.mp3",
+      "spotifyUrl": "https://open.spotify.com/track/mock1",
+      "transcript": "Bem-vindos aos Devocionais Proféticos da Apocalypse Academy. Nesta série, vamos meditar juntos nas profecias bíblicas e refletir sobre como elas iluminam nossa compreensão do mundo atual. Como nos diz 2 Pedro 1:19, a palavra profética é como uma luz que brilha em lugar escuro. Em tempos de incerteza e confusão, as profecias bíblicas nos oferecem clareza e esperança...",
+      "tags": ["introdução", "profecias", "meditação"]
+    },
+    {
+      "id": "track-002",
+      "title": "Daniel 2 - O Sonho de Nabucodonosor",
+      "description": "Uma meditação sobre a visão da estátua em Daniel 2, que revela o plano de Deus para os reinos deste mundo e o estabelecimento final do Reino de Cristo.",
+      "scripture": "Daniel 2:31-45",
+      "duration": "5:20",
+      "audioUrl": "/assets/audio/devocionais/daniel-2.mp3",
+      "spotifyUrl": "https://open.spotify.com/track/mock2",
+      "transcript": "O segundo capítulo de Daniel nos apresenta uma das profecias mais extraordinárias da Bíblia: o sonho de Nabucodonosor sobre uma grande estátua. Esta visão oferece um panorama da história mundial, desde o império babilônico até o estabelecimento do Reino eterno de Deus. Enquanto meditamos nesta passagem, consideremos como os eventos geopolíticos atuais se encaixam nesta narrativa profética...",
+      "tags": ["daniel", "reinos mundiais", "pedra"]
+    },
+    {
+      "id": "track-003",
+      "title": "Apocalipse 1 - A Revelação de Jesus Cristo",
+      "description": "Uma reflexão sobre o primeiro capítulo do Apocalipse, que nos apresenta Jesus Cristo em toda a Sua glória e majestade como o Soberano da história.",
+      "scripture": "Apocalipse 1:9-20",
+      "duration": "4:15",
+      "audioUrl": "/assets/audio/devocionais/apocalipse-1.mp3",
+      "spotifyUrl": "https://open.spotify.com/track/mock3",
+      "transcript": "O livro do Apocalipse começa não com cenas de julgamento ou tribulação, mas com uma visão gloriosa de Jesus Cristo. João, exilado na ilha de Patmos, vê o Senhor ressurreto em toda a Sua majestade divina. Esta visão nos lembra que, independentemente das circunstâncias que enfrentamos, Cristo está no controle. Ele é o Alfa e o Ômega, o princípio e o fim...",
+      "tags": ["apocalipse", "jesus cristo", "visão"]
+    },
+    {
+      "id": "track-004",
+      "title": "Mateus 24 - Os Sinais dos Tempos",
+      "description": "Uma meditação sobre o discurso profético de Jesus no Monte das Oliveiras, onde Ele descreve os sinais que precederiam Sua segunda vinda.",
+      "scripture": "Mateus 24:3-14",
+      "duration": "6:10",
+      "audioUrl": "/assets/audio/devocionais/mateus-24.mp3",
+      "spotifyUrl": "https://open.spotify.com/track/mock4",
+      "transcript": "No Monte das Oliveiras, os discípulos perguntaram a Jesus sobre os sinais de Sua vinda e do fim dos tempos. Sua resposta em Mateus 24 nos oferece um roteiro profético que podemos observar se desenrolando em nosso mundo atual. Guerras, rumores de guerras, fomes, terremotos, perseguições e o aumento da iniquidade - todos estes sinais estão presentes em nossa geração...",
+      "tags": ["sinais", "segunda vinda", "monte das oliveiras"]
+    },
+    {
+      "id": "track-005",
+      "title": "Ezequiel 38 - A Guerra de Gogue e Magogue",
+      "description": "Uma análise da profecia de Ezequiel sobre a coalizão de nações que atacará Israel nos últimos dias, e suas possíveis conexões com alianças geopolíticas atuais.",
+      "scripture": "Ezequiel 38:1-16",
+      "duration": "5:30",
+      "audioUrl": "/assets/audio/devocionais/ezequiel-38.mp3",
+      "spotifyUrl": "https://open.spotify.com/track/mock5",
+      "transcript": "A profecia de Ezequiel 38 descreve uma coalizão de nações, liderada por Gogue da terra de Magogue, que atacará Israel nos últimos dias. Muitos estudiosos identificam estas nações com Rússia, Irã, Turquia e outros países que hoje formam alianças contra Israel. Enquanto observamos o cenário geopolítico atual no Oriente Médio, é impressionante ver como estas alianças estão se formando exatamente como previsto há mais de 2.500 anos...",
+      "tags": ["ezequiel", "gogue", "magogue", "israel"]
+    }
+  ],
+  "totalDuration": "25:00",
+  "category": "Profecias Bíblicas",
+  "tags": ["devocionais", "profecias", "meditação", "análise contemporânea"],
+  "relatedDevotionals": ["devotional-002", "devotional-003"],
+  "relatedCourses": ["course-001", "course-003"],
+  "nextVolume": {
+    "id": "devotional-002",
+    "title": "Devocionais Proféticos - Volume 2",
+    "releaseDate": "2025-03-15"
+  }
+}
